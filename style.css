@@ -1,0 +1,236 @@
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+    padding: 10px 20px;
+    color: white;
+}
+
+/* logo */
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+}
+
+/* link navbar */
+.link {
+    list-style: none;
+    display: flex;
+}
+
+.link li {
+    margin: 0 15px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.link a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff6347;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.link a:hover {
+    color: rgb(30, 3, 66);
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+
+
+/* hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white; /* warna teks heading */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: white; /* warna teks deskripsi */
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(100, 13, 95); /* warna tombol */
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gambar-hero  img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* About Us Section */
+.about {
+    padding: 50px;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+    text-align: center;
+}
+
+.judul-about h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red; /* Garis bawah merah dengan tulisan "About Us" */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-us-item {
+    text-align: center;
+    border: 2px solid black; /* Bingkai garis warna hijau */
+    padding: 20px; /* Ruang antara bingkai dan konten */
+    border-radius: 10px; /* Sudut melengkung */
+    transition: transform 0.3s ease; /* Animasi transisi */
+}
+
+.about-us-item:hover {
+    transform: scale(1.05); /* Skala diperbesar saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Efek bayangan saat hover */
+}
+
+.about-us-foto .foto-kelompok {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid black; /* Lingkaran warna kuning */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah foto */
+}
+
+.about-us-bio p {
+    font-size: 1.2em;
+    color: white;
+    margin: 5px 0;
+}
+
+.link-medsos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.link-icon a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.link-icon a:hover {
+    transform: scale(1.1);
+}
+
+.link-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* COMPANY INFORMATION SECTION */
+.info-perusahaan {
+    padding: 50px;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+    text-align: center;
+}
+
+.company-info-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.company-foto .foto-perusahaan {
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px; /* Menambahkan jarak di sebelah kanan foto */
+}
+
+.company-bio {
+    text-align: left;
+}
+
+.company-bio p {
+    font-size: 1.2em;
+    color: white;
+    margin: 5px 0;
+    padding: 10px; /* Ruang antara teks dan bingkai */
+}
+
+.company-name {
+    border: none; /* Menghilangkan warna bingkai */
+}
+
+.company-description {
+    border: none; /* Menghilangkan warna bingkai */
+}
+
+.company-address {
+    border: none; /* Menghilangkan warna bingkai */
+}
