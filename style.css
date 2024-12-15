@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+}
+
 /* navbar */
 .navbar {
     position: sticky;
@@ -197,6 +201,15 @@
     text-align: center;
 }
 
+.judul-perusahaan h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red; /* Garis bawah merah dengan tulisan "About Us" */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
 .company-info-content {
     display: flex;
     justify-content: flex-start;
@@ -211,6 +224,7 @@
     object-fit: cover;
     margin-right: 20px; /* Menambahkan jarak di sebelah kanan foto */
 }
+
 
 .company-bio {
     text-align: left;
@@ -233,4 +247,147 @@
 
 .company-address {
     border: none; /* Menghilangkan warna bingkai */
+}
+
+
+
+/* LAYANAN */
+.head h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red; /* Garis bawah merah dengan tulisan "About Us" */
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.pertanian, .perikanan, .perumahan{
+    margin: 50px 0;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+    color: white;
+}
+
+.pertanian h1, .perikanan h1, .perumahan h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pertanian-konten{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.perikanan-konten {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.perumahan-konten {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: row-reverse; /* Tambahkan properti ini untuk membalik urutan elemen */
+}
+
+.pertanian img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
+}
+
+.perikanan img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
+}
+
+.perumahan img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
+}
+
+.deskripsi {
+    flex: 1;
+}
+
+.deskripsi h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.deskripsi p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/* PRODUCT SECTION */
+.menu {
+    text-align: center;
+    margin: 0 0;
+    padding: 50px;
+    background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
+}
+
+.menu h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.menu-item {
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white; /* Tambahkan properti ini */
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description {
+    padding: 15px;
+}
+
+.description h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.description p {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
 }
