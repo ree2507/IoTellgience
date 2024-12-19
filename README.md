@@ -17,15 +17,5 @@ TIMELINE PEMBUATAN WEBSITE
 3. Mencari collor pallete untuk warna website
 
 12/12/2024
-1. Membuat menu navbar
-
-13/12/2024
-1. Membuat konten 1 motto perusahaan
-
-14/12/2024
-1. Membuat konten 2 about us
-2. Membuat konten 3 informasi perusahaan
-
-15/12/2024
-1. Membuat konten 4 produk yang dijual
+1. Menerapkan desain ke code html dan css
 
