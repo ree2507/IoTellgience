@@ -1,9 +1,10 @@
 # IoTellgience
 Project UAS praktikum WEB I membuat website startup
 
-NAMA WEBSITE IoTelligence
-TEMA WEBSITE:
-ISI KONTEN WEBSITE:
+Status: Selesai - Belum responsif
+Waktu pengerjaan: 7 hari
+
+NAMA WEBSITE: IoTelligence
 
 ANGGOTA KELOMPOK
 1. Reyhan Dany_F55123095
@@ -18,4 +19,7 @@ TIMELINE PEMBUATAN WEBSITE
 
 12/12/2024
 1. Menerapkan desain ke code html dan css
+
+19/12/2024
+1. Website selesai dibuat
 
