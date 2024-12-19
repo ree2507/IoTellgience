@@ -2,6 +2,7 @@
 Project UAS praktikum WEB I membuat website startup
 
 Status: Selesai - Belum responsif
+
 Waktu pengerjaan: 7 hari
 
 NAMA WEBSITE: IoTelligence
