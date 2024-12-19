@@ -36,11 +36,8 @@ body {
     display: flex;
 }
 
-.link li {
-    margin: 0 15px;
-}
-
 .link a {
+    margin: 0 15px; /* Menambahkan margin langsung */
     text-decoration: none;
     color: white;
     font-size: 1em;
@@ -262,65 +259,47 @@ body {
     text-align: center;
 }
 
-.pertanian, .perikanan, .perumahan{
-    margin: 50px 0;
+.layanan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
     background: linear-gradient(90deg, rgb(0, 34, 77), rgb(160, 21, 62)); /* Gradien warna */
-    color: white;
 }
 
-.pertanian h1, .perikanan h1, .perumahan h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.pertanian-konten{
+.card-container {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.perikanan-konten {
+.card {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.perumahan-konten {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-direction: row-reverse; /* Tambahkan properti ini untuk membalik urutan elemen */
-}
-
-.pertanian img{
-    width: 400px;
+.card img {
+    width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
-}
-
-.perikanan img {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
-}
-
-.perumahan img {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; /* Mengatur sudut gambar agar tidak terlalu runcing */
+    border-radius: 10px;
 }
 
 .deskripsi {
-    flex: 1;
+    text-align: center;
 }
 
 .deskripsi h2 {
-    margin: 0;
+    margin: 10px 0;
     font-size: 28px;
 }
 
@@ -333,6 +312,16 @@ body {
 
 
 /* PRODUCT SECTION */
+.sub-produk h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 .menu {
     text-align: center;
     margin: 0 0;
@@ -390,4 +379,177 @@ body {
     font-size: 20px;
     color: #333;
     margin-top: 10px;
+}
+
+
+
+
+/* WHY OUR PRODUCT SECTION */
+.sub-why h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red; 
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.why {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    max-width: 800px; 
+}
+
+.content h2 {
+    color: white;
+}
+
+.content p {
+    color: white;
+    line-height: 1.6;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; 
+}
+
+.stat {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px; 
+}
+
+.stat h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem; 
+}
+
+.stat p {
+    color: white;
+    margin: 5px 0 0;
+    font-size: 1rem; 
+}
+
+
+
+/* Section Contact */
+.sub-kontak {
+    text-align: center; 
+}
+
+.sub-kontak h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 5px solid red; 
+    display: inline-block; 
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding: 20px;
+    max-width: 1400px; 
+    margin: 0 auto; 
+}
+
+/* Kontainer */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    padding: 0 40px; 
+}
+
+/* Informasi Kontak */
+.contact-info {
+    width: 48%; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(5px); 
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: black;
+}
+
+.icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: red;
+}
+
+/* Form Kontak */
+.contact-form {
+    width: 48%; 
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.btn-send {
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-send:hover {
+    background-color: darkred;
 }
