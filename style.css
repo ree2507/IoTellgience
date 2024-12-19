@@ -496,6 +496,10 @@ body {
 }
 
 /* Informasi Kontak */
+.contact {
+    margin-bottom: 50px;
+}
+
 .contact-info {
     width: 48%; 
     background: rgba(255, 255, 255, 0.9); 
@@ -553,3 +557,73 @@ body {
 .btn-send:hover {
     background-color: darkred;
 }
+
+
+
+/* Footer */
+footer {
+    background-color: #121212; /* Warna latar gelap */
+    color: #ffffff; /* Warna teks putih */
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 180px;
+  }
+  
+  .footer-section h2, .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #0dd9ff; /* Warna untuk judul */
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #0dd9ff; /* Warna hover */
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #0dd9ff; /* Warna hover */
+  }
+  
